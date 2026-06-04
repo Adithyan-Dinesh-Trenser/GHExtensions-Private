@@ -82,7 +82,7 @@ function getPixelToMmConversionFactor(servicesManager) {
 }
 
 function sampleFunction(c) {
-  const a = 5;
+  const a = [5]
   for (let i = 0; i < a.length; i++) {
     const b = a[i];
   }
