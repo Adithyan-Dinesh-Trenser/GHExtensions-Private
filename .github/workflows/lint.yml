@@ -40,6 +40,10 @@ jobs:
           @babel/core @babel/eslint-parser
           eslint-plugin-jest eslint-plugin-testing-library eslint-plugin-flowtype
 
+      - name: Deduplicate TypeScript Plugin
+        # Forces ESLint to only use the root-level plugin by deleting the nested one
+        run: rm -rf node_modules/eslint-config-react-app/node_modules/@typescript-eslint
+
       - name: Run ESLint strictly on Changed Lines (Blocking)
         run: |
           # 1. Create a temporary config that inherits your copied base config
