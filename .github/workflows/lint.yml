@@ -33,16 +33,12 @@ jobs:
         # Installs packages directly into node_modules without modifying/requiring package.json
         run: >
           npm install --no-save
-          eslint@8
-          eslint-plugin-diff
-          eslint-config-prettier
-          eslint-config-react-app 
-          eslint-plugin-react
-          eslint-plugin-react-hooks
-          eslint-plugin-import
-          eslint-plugin-jsx-a11y
-          @typescript-eslint/eslint-plugin
-          @typescript-eslint/parser
+          eslint@8 eslint-plugin-diff
+          eslint-config-prettier eslint-plugin-prettier prettier
+          eslint-config-react-app eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-import
+          @typescript-eslint/eslint-plugin @typescript-eslint/parser
+          @babel/core @babel/eslint-parser
+          eslint-plugin-jest eslint-plugin-testing-library eslint-plugin-flowtype
 
       - name: Run ESLint strictly on Changed Lines (Blocking)
         run: |
