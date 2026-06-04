@@ -2,7 +2,7 @@ name: Lint Check
 
 on:
   push:
-    branches: ['**']
+    branches: ["**"]
   pull_request:
     branches:
       - nightly
@@ -72,5 +72,3 @@ jobs:
 
           # 3. Execute ESLint across the codebase using the temporary diff config via npx
           npx eslint --max-warnings=0 --config .eslintrc.diff.json --ext .js,.jsx,.ts,.tsx .
-
-```
