@@ -1,5 +1,5 @@
 {
-  "plugins": ["@typescript-eslint", "import", "eslint-plugin-tsdoc", "prettier"],
+  "plugins": ["import", "eslint-plugin-tsdoc", "prettier"],
   "extends": [
     "react-app",
     "eslint:recommended",
