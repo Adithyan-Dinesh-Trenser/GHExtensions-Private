@@ -81,7 +81,7 @@ function getPixelToMmConversionFactor(servicesManager) {
   return Math.max(spacing[0], spacing[1]);
 }
 
-export function sampleFunction(c) {
+export function sampleFunction() {
   const a = [5];
   for (let i = 0; i < a.length; i++) {
     const b = a[i];
