@@ -34,9 +34,9 @@ jobs:
         run: >
           npm install --no-save
           eslint@8 eslint-plugin-diff
-          eslint-config-prettier eslint-plugin-prettier prettier
+          prettier eslint-plugin-prettier eslint-config-prettier
           eslint-config-react-app eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-import
-          @typescript-eslint/eslint-plugin @typescript-eslint/parser
+          @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-tsdoc
           @babel/core @babel/eslint-parser
           eslint-plugin-jest eslint-plugin-testing-library eslint-plugin-flowtype
 
