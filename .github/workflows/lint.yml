@@ -36,6 +36,7 @@ jobs:
           eslint@8
           eslint-plugin-diff
           eslint-config-prettier
+          eslint-config-react-app 
           eslint-plugin-react
           eslint-plugin-react-hooks
           eslint-plugin-import
