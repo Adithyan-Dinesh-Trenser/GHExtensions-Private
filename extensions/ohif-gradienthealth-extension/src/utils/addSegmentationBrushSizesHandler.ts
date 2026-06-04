@@ -80,3 +80,10 @@ function getPixelToMmConversionFactor(servicesManager) {
   const { spacing } = imageData;
   return Math.max(spacing[0], spacing[1]);
 }
+
+function sampleFunction(c) {
+  const a = 5;
+  for (let i = 0; i < a.length; i++) {
+    const b = a[i];
+  }
+}
